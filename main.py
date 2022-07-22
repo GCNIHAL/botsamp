@@ -28,4 +28,4 @@ if __name__ == "__main__":
     load_extensions(bot=bot)
 
     # start the bot
-    bot.start("OTUwNDA0ODIwODk0OTA4NDM2.GFWUAN.P9g1uORNGTf-JlRL99gXd8B_b8QqymXOPUWGeQ")
+    bot.start("token")
