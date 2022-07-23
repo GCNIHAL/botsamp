@@ -28,4 +28,4 @@ if __name__ == "__main__":
     load_extensions(bot=bot)
 
     # start the bot
-     bot.start(os.getenv("DISCORD_TOKEN"))
+    bot.start(os.getenv("DISCORD_TOKEN"))
