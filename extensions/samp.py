@@ -25,9 +25,9 @@ from naff.ext.paginators import Paginator
 from samp_client.client import SampClient
 
 
-   @client.event
-async def on_ready():
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='The Boys'))
+class Status(str, Enum):
+    """Represents the statuses a user may have."""
+    DND = "dnd"
 
 class samp(Extension):
     @slash_command(
