@@ -26,6 +26,11 @@ from samp_client.client import SampClient
 
 
 class samp(Extension):
+     
+    @bot.event
+    async def on_ready():
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="server status"))
+    
     @slash_command(
         name="samp",
         sub_cmd_description="Query your favorite SA-MP server",
