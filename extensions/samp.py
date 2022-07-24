@@ -28,7 +28,6 @@ from samp_client.client import SampClient
 class samp(Extension):
     @slash_command(
         name="samp",
-        sub_cmd_name="query",
         sub_cmd_description="Query your favorite SA-MP server",
     )
     @slash_option(
