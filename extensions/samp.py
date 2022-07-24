@@ -20,14 +20,9 @@ import datetime
 import os
 from typing import Optional
 
-from naff import Embed, Extension, OptionTypes, slash_command, slash_option, Enum
+from naff import Embed, Extension, OptionTypes, slash_command, slash_option
 from naff.ext.paginators import Paginator
 from samp_client.client import SampClient
-
-
-class Status(str, Enum):
-    """Represents the statuses a user may have."""
-    DND = "dnd"
 
 class samp(Extension):
     @slash_command(
