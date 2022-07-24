@@ -20,7 +20,7 @@ import datetime
 import os
 from typing import Optional
 
-from naff import Embed, Extension, OptionTypes, slash_command, slash_option
+from naff import Embed, Extension, OptionTypes, slash_command, slash_option, Enum
 from naff.ext.paginators import Paginator
 from samp_client.client import SampClient
 
