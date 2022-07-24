@@ -19,11 +19,6 @@ if __name__ == "__main__":
     bot = CustomClient(
         intents=Intents.DEFAULT,  # intents are what events we want to receive from discord, `DEFAULT` is usually fine
     )
-    
-    #status
-    @bot.event
-    async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="server status"))
 
     # load the debug extension if that is wanted
     if os.getenv("LOAD_DEBUG_COMMANDS") == "true":
