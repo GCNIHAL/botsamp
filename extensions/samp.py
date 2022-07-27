@@ -166,7 +166,7 @@ class samp(Extension):
             return await paginators.send(ctx)
         except:
             embed = Embed(
-                description=f":x: Couldn't connect to the server",
+                description=f":x: The server is down or :tools: under maintenance",
                 color=0xFF0000,
             )
             return await ctx.send(embed=embed)
